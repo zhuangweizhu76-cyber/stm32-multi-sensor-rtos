@@ -68,8 +68,8 @@ The Consumer task is intentionally structured as a standalone module so that the
 
 | Task | Role | Priority | Stack |
 |------|------|----------|-------|
-| `SensorTask` | Producer — reads AHT20 (I2C), MQ-2 (ADC), LDR (ADC), packs into struct, enqueues | Normal | 512 words |
-| `OutputTask` | Consumer — dequeues sensor struct, formats, prints via UART | Normal | 512 words |
+| `SensorTask` | Producer — reads AHT20 (I2C), MQ-2 (ADC), LDR (ADC), packs into struct, enqueues | Normal | 128 words |
+| `OutputTask` | Consumer — dequeues sensor struct, formats, prints via UART | Normal | 256 words |
 
 ### Shared Data Structure
 
